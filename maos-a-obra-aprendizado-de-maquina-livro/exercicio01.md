@@ -11,10 +11,7 @@
    R: É um conjunto de treinamento que contém a solução desejada pelo programador em sua composição.
 
 4. Quais são as duas tarefas supervisionadas mais comuns?  
-   R: 1º. Regressão linear;  
-      2º. Regressão logística;   
-      3º. K-ésimo vizinho mais próximo;  
-      4º. Redes neurais.
+   R: Regressão e Classificação
 
 5. Você consegue citar quatro tarefas comuns não supervisionadas?  
    R: 1º. Clusterização;  
@@ -41,27 +38,28 @@
    R: Os algoritmos de aprendizado baseado em instância.
 
 12. Qual a diferença entre um parâmetro de modelo e o hiperparâmetro do algoritmo de aprendizado?  
-   R: Um parâmetro pode ter seus valores alterados ao longo da execução do algoritmo de AM, já o hiperparâmetro tem seu valor definido anteriormente a execução do algoritmo e permanece imutável.
+   R: Um parâmetro irá variar de acordo com as instâncias de treinamento até alcançar um valor ideal para realizar as generalizações, já um hiperparâmetro não irá variar, pois ele foi definido anteriormente a execução do sistema, ou seja, ele é um parâmetro do algoritmo de aprendizagem, não do modelo treinado.
 
 13. Para que servem os algoritmos de aprendizado baseados em modelos? Qual é a estratégia mais comum que eles utilizam para serem bem-sucedidos? Como eles fazem predições?  
-   R: Para, assim como o modelo baseado em instâncias, fazer generalizações de novos casos, porém esse agrupa um conjunto de de dados de treinamento e a partir desse agrupamento um modelo para fazer predições é criado. Definir uma função utilidade (função avaliação) que calcula quanto um modelo é bom ou definir uma função custo que calcula quanto um modelo é ruim. A partir de um modelo criado com base nos dados do conjunto de treinamento que visa generalizar novos casos.
+   R: Visam procurar o valor ideal para os parâmetros do modelo, de modo que o modelo seja bem generalizado para novas instâncias. Geralmente os modelos são treinados visando em diminuir a função custo de modo que as generalizações que são feitas por ele sejam mais precisas possível. São dadas novas instâncias ao modelo e esse por sua vez, usando os valores dos parâmetros encontrados, faz a predição.
 
 14. Você pode mencionar quatro dos principais desafios do aprendizado de máquina?  
    R: 1º. Quantidade insuficiente de dados de treinamento;  
       2º. Dados de treinamento não representativos;  
       3º. Dados de baixa qualidade;  
-      4º. Sobreajuste dos dados de treinamento.
+      4º. Características não informativas.
 
-15. Caso o modelo tenha um bom desempenho nos dados de treinamento, mas a generalização deixa a desejar em instâncias novas, o que está acontecendo? Você pode exemplificar três possíveis soluções?
+15. Caso o modelo tenha um bom desempenho nos dados de treinamento, mas a generalização deixa a desejar em instâncias novas, o que está acontecendo? Você pode exemplificar três possíveis soluções?  
+   R: Provavelmente está sobreajustado para novos dados de treinamento.
 
 16. O que é um conjunto de testes e por que você o utilizaria?  
    R: Um conjunto de testes é uma parte do conjunto total dos dados que é usado para verificar a eficiência do sistema de aprendizado treinado pelo conjunto de treinamento e também verificar se o mesmo está generalizando bem (se possui uma baixa taxa sobre o erro de generalização). Utilizaria para verificar quão eficiente meu sistema de aprendizado está generalizando com base no conjunto de treinamento usado.
 
 17. Qual é o propósito de um conjunto de validação?  
-   R: É uma parte separada do conjunto de treinamento que tem como função diminuir o campo que o conjunto de treinamento separado irá ter ao ser usado com diferentes modelos que por sua vez possuem diferentes hiperparâmetros.
+   R: É usado para comparar modelos.
 
 18. O que é um train-dev set, quando é necessário e como usá-lo?  
    R: Separação de dados da internet em um conjunto restrito (conjunto de desenvolvimento de treinamento). Após o sistema ser treinado sem o train-dev set, podemos utilizar este para utilizar como um "conjunto de teste" e verificar a eficiência do nosso sistema.
 
 19. O que pode sair de errado se você ajustar os hiperparâmetros utilizando o conjunto de testes?  
-   R: A taxa de erros de generalização pode disparar devido a baixa quantidade de exemplos a serem trabalhados.
+   R: Se corre o risco de sobreajustar o conjunto de teste, fazendo com que o erro de generalização obtido sobre ele seja bem otimista.
