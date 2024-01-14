@@ -14,7 +14,7 @@
 
 7. Que tipo de algoritmo você utilizaria a fim de segmentar seus clientes em diversos grupos?
 
-8. Você acha que o problema da detecção de spam tem a ver com o aprendizado supervisionado ou não supervisionado?
+8. Você acha que o problema da detecção de spam tem a ver com o aprendizado supervisionado ou não supervisionado?  
    R: Tem a ver com o aprendizado supervisionado, pois se faz necessária a solução desejada (rótulo) no conjunto de treinamento.
 
 9. O que é um sistema de aprendizado online?
