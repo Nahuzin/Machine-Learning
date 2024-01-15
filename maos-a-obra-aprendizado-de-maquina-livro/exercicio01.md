@@ -50,7 +50,7 @@
       4º. Características não informativas.
 
 15. Caso o modelo tenha um bom desempenho nos dados de treinamento, mas a generalização deixa a desejar em instâncias novas, o que está acontecendo? Você pode exemplificar três possíveis soluções?  
-   R: Provavelmente está sobreajustado para novos dados de treinamento.
+   R: Provavelmente está sobreajustado para novos dados de treinamento. Obter mais dados, simplificar o modelo ou reduzir o ruído nos dados de treinamento.
 
 16. O que é um conjunto de testes e por que você o utilizaria?  
    R: Um conjunto de testes é uma parte do conjunto total dos dados que é usado para verificar a eficiência do sistema de aprendizado treinado pelo conjunto de treinamento e também verificar se o mesmo está generalizando bem (se possui uma baixa taxa sobre o erro de generalização). Utilizaria para verificar quão eficiente meu sistema de aprendizado está generalizando com base no conjunto de treinamento usado.
@@ -59,7 +59,7 @@
    R: É usado para comparar modelos.
 
 18. O que é um train-dev set, quando é necessário e como usá-lo?  
-   R: Separação de dados da internet em um conjunto restrito (conjunto de desenvolvimento de treinamento). Após o sistema ser treinado sem o train-dev set, podemos utilizar este para utilizar como um "conjunto de teste" e verificar a eficiência do nosso sistema.
+   R: É a separação de dados da internet em um conjunto restrito (conjunto de desenvolvimento de treinamento). Após o sistema ser treinado sem o train-dev set, podemos utilizar este para utilizar como um "conjunto de teste" e verificar a eficiência do nosso sistema.
 
 19. O que pode sair de errado se você ajustar os hiperparâmetros utilizando o conjunto de testes?  
    R: Se corre o risco de sobreajustar o conjunto de teste, fazendo com que o erro de generalização obtido sobre ele seja bem otimista.
